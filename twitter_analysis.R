@@ -8,7 +8,7 @@ library(wordcloud)
 library(ggplot2)
 library(fpc)
 library(qdap)
-library(igraph)
+#library(igraph)
 
 
 
