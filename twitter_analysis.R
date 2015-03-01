@@ -125,6 +125,7 @@ tSentimen<-function (content){
   twicorpus<-makeCorpus(content)
   dataframe<-data.frame(text=unlist(sapply(twicorpus, `[`, "content")), stringsAsFactors=F) # storing corpus as data frame
   (poldat <- with(dataframe, polarity(text))) #getting polarity of the tweets
+  return(poldat)
 }
 
 #Just for example, edit the hashtag and number of tweets to fetch
